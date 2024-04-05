@@ -1,5 +1,6 @@
 import calendar
 import datetime
+import os
 import time
 
 import chromedriver_autoinstaller
@@ -19,8 +20,13 @@ driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("https://sierra7.unanet.biz/sierra7/action/home")
 
+# For developers:
+# current_file_path = __file__
+# parent_directory = os.path.dirname(current_file_path)
+# with open(f"{parent_directory}//credentials_self.yaml", "r") as yaml_file:
+#     data = yaml.safe_load(yaml_file)
+
 with open("credentials.yaml", "r") as yaml_file:
-    # Load the data from the YAML file
     data = yaml.safe_load(yaml_file)
 
 user = data['credentials']['username']
