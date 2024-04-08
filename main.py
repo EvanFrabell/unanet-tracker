@@ -21,9 +21,7 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://sierra7.unanet.biz/sierra7/action/home")
 
 # For developers:
-# current_file_path = __file__
-# parent_directory = os.path.dirname(current_file_path)
-# with open(f"{parent_directory}//credentials_self.yaml", "r") as yaml_file:
+# with open("C:\\Users\\epfra\\Documents\\GitHub\\credentials_self.yaml", "r") as yaml_file:
 #     data = yaml.safe_load(yaml_file)
 
 with open("credentials.yaml", "r") as yaml_file:

@@ -29,7 +29,8 @@
 ### Setup Task Scheduler
 
 1. Open scheduler.bat in a text editor (notepad)
-    - In the first set of parentheses replace the installation path + interpreter (.exe) to Python on your pc (likely the same what is already in the .bat file)
+    - In the 1st set of parentheses replace the installation path + interpreter (.exe) to Python on your pc (likely the same what is already in the .bat file)
+    - In the 2nd set of parentheses replace the full path to your main.py file
 2. Test scheduler by double-clicking scheduler.bat.  The script should behave the same in step 5 above (there will likely be an error when saving time sheet).
 3. Checkout Unanet manually to ensure timesheet is correct still.
 4. Setup Windows Task Scheduler
@@ -37,7 +38,6 @@
     - Click 'Create Task...'
     - General tab:
       - Name: UnaNetClockIn
-      - Select 'Run whether user is logged on or not'
       - Configure for: Windows 10
     - Triggers tab:
       - Click New...
@@ -46,7 +46,7 @@
       - Select Stop task if it... Select 1 hour
     - Actions tab:
       - Click New...
-      - Place full path to scheduler.bat file in unanet-tracker folder ("C:\Users\epfra\downloads\unanet-tracker\scheduler.bat") into Program/script: input.  Your path will be slightly different from mine.
+      - Place full path to scheduler.bat file in unanet-tracker folder ("C:\Users\yourPCName\downloads\unanet-tracker\scheduler.bat") into Program/script: input.  Your path will be slightly different from mine.
       - Click OK
 
 #### *You should be set from here, but feel free to message me about any bugs or confusion.*
